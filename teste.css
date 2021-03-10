@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-table{
+    height: 300px;
+    overflow-y: scroll;
+}
+table{
+    background-color: rgb(28, 27, 32);
+    height: 300px;
+    width: 100%;
+    line-height: 20px;
+    color: rgb(207, 188, 94);
+    
+}
+
+tr td a{
+    text-decoration: none;
+    color: rgb(207, 188, 94);
+    font-size: 20px;
+    height: 80px;
+}
+
+td p:first-child{
+    cursor: pointer;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.order{
+    padding: 15px;
+    width: 150px;
+    background-color: rgb(19, 165, 19);
+    margin-top: 45px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.order a{
+    text-decoration: none;
+    color: white;
+}
+.order:hover{
+    transform: scale(1.05);
+}
