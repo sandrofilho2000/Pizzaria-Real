@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Real</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
     <link rel="stylesheet" href="teste.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -30,7 +31,7 @@
             overflow: hidden;
             color: rgb(207, 188, 9.994);
             background-color: black;
-            opacity: 0.9;
+            opacity: 0.5;
             transition: 0.8s;
             position: absolute;
             z-index: 2;
@@ -51,19 +52,14 @@
     </style>
 </head>
 <body>
-    <input type="checkbox" name="" id="check" class="check">
-    <label for="check" class="checklabel">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
     </label>
     <header>
         <div class="container">
             <div><div class="logo"></div></div>
             <div><ul class='header-ul' style="list-style-type: none">
                 <li><a href="#main-menu" >Cardápio</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#footer">Contato</a></li>
+                <li><a href="admin.html">Sobre</a></li>
+                <li><a href="teste.php">Contato</a></li>
             </ul></div>
         </div>
         <div class="clear"></div>
@@ -113,233 +109,7 @@
         <div class="pizza-img">
 
         </div>
-            <div class="tradicionais">
-                <h1>TRADICIONAIS</h1>
-                <table class="table"> 
-                    <tr>
-                        <td>
-                            <h3 style="cursor: pointer;" class="pizza real">Real</h3>
-                            <p class = 'real-ing'>Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="real-preco">49.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3 style="cursor: pointer;" class="pizza minas">Minas Gerais</h3>
-                            <p id = 'marguerita-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="minas-preco">39.99</span> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3 style="cursor: pointer;" class="pizza marguerita">Marguerita</h3>
-                            <p id = 'marguerita-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="marguerita-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3 style="cursor: pointer;" class="pizza 4queijos">4 Queijos</h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3 style="cursor: pointer;" class="pizza carne-seca">4 Queijos</h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="veganas">
-                <h1>VEGANAS</h1>
-                <table class="table"> 
-                    <tr>
-                        <td>
-                            <h3> <a href="#" class="pizza real">Real</a></h3>
-                            <p class = 'real-ing'>Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="real-preco">49.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza minas">Minas Gerais</a></h3>
-                            <p id = 'marguerita-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="minas-preco">39.99</span> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza marguerita">Marguerita</a></h3>
-                            <p id = 'marguerita-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="marguerita-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="low-carb">
-                <h1>LOW CARB</h1>
-                <table class="table"> 
-                    <tr>
-                        <td>
-                            <h3> <a href="#" class="pizza real">Real</a></h3>
-                            <p class = 'real-ing'>Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="real-preco">49.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza minas">Minas Gerais</a></h3>
-                            <p id = 'marguerita-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="minas-preco">39.99</span> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza marguerita">Marguerita</a></h3>
-                            <p id = 'marguerita-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="marguerita-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="doces">
-                <h1>DOCES</h1>
-                <table class="table"> 
-                    <tr>
-                        <td>
-                            <h3> <a href="#" class="pizza real">Real</a></h3>
-                            <p class = 'real-ing'>Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="real-preco">49.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza minas">Minas Gerais</a></h3>
-                            <p id = 'marguerita-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="minas-preco">39.99</span> 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza marguerita">Marguerita</a></h3>
-                            <p id = 'marguerita-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="marguerita-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <h3><a href="#" class="pizza 4queijos">4 Queijos</a></h3>
-                            <p id = '4queijos-ing' = >Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano</p>
-                        </td>
-                        <td>
-                            R$<span id="4queijos-preco">59.99</span>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            
         </div><!--cardapio-->
 
 
@@ -374,9 +144,11 @@
         <div class="order" onclick="order()">
             <a href="#">Fazer Pedido<a>
         </div><!--order-->
+        
     </main>
     <script src="js/script.js"></script>
     <script src="js/order.js"></script>
+    <script src="js/jquery.js"></script>
     <footer id='footer'>
         
         <div class="img-footer"></div>

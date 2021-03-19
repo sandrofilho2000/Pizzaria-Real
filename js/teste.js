@@ -1,169 +1,114 @@
-/*lista = []
+$(function(){
+    pizzas = $('span.pizza-nome')
+    ingredientes = $('td p')
+    big = $('.td-grande')
+    medium = $('.td-media')
+    small = $('.td-pequena')
 
-var real = document.getElementById("real")
-var real_price = Number(document.getElementById('real-preco').innerText)
-
-var minas = document.getElementById("minas")
-var minas_price = Number(document.getElementById('minas-preco').innerText)
-
-var marguerita = document.getElementById("marguerita")
-var marguerita_price = Number(document.getElementById('marguerita-preco').innerText)
-
-
-
-function clicar(){
-    if (real.checked){
-
-        if (lista.includes('Real') == false){
-            lista.push('Real')
-            console.log(lista)
-    ///Real 
-        }
-    }else if(real.checked == false){
-        lista.splice(lista.indexOf('Real'), 1)
-        console.log(lista)
-    }
-    
-    if (minas.checked){
-        
-        if (lista.includes('Minas Gerais') == false){
-            lista.push('Minas Gerais')
-            console.log(lista)
-        }
-    }else if(real.checked == false){
-        lista.splice(lista.indexOf('Minas Gerais'), 1)
-        console.log(lista)
-    }
-    
-    ///Minas Gerais
-
-    if (marguerita.checked){
-        if (lista.includes('Marguerita') == false){
-            lista.push('Marguerita')
-            console.log(lista)
-        }
-    }else if(marguerita.checked == false){
-        lista.splice(lista.indexOf('Marguerita'), 1)
-        console.log(lista)
-    }
-    
-}   
-
-
-
-class Pedido{
-    constructor(number, nome, telefone, pizza, endereço, referência, observação, total){
-        this.number = number;
-        this.nome = nome;
-        this.telefone = telefone;
-        this.pizza = pizza;
-        this.endereço = endereço;
-        this.referencia = referência;
-        this.observacao = observação;
-        this.total = total;
-    }
-    printPedido(){
-        console.log(`N°: ${this.number}`)
-        console.log(`Nome: ${this.nome}`)
-        console.log(`Telefone: ${this.telefone}`)
-        console.log(`Pizza: ${this.pizza}`)
-        console.log(`Endereço: ${this.endereço}`)
-        console.log(`Referência: ${this.referencia}`)
-        console.log(`Observação: ${this.observacao}`)
-        console.log(`Total: ${this.total}`)
-    }
-}
-
-function order(){
-    pedido = new Pedido(1, 'Sandro Filho', '21984238879', '1x Real Grande Sem Borda, 1* Coca Cola 2 litros', 'Rua Santa Luzia, 68', 'Na rua dos correios', 'Sem cebola', 'R$59.90')
-    pedido.printPedido()
-}*/
-
-let pizza = document.querySelectorAll('.pizza');
-
-let product = [
-    {
-        name: 'Real',
-        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
-        price: 49.90,
-        inBag: 0
-    },
-    {
-        name: 'Minas Geais',
-        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
-        price: 49.90,
-        inBag: 0
-    },
-    {
-        name: 'Marguerita',
-        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
-        price: 49.90,
-        inBag: 0
-    },
-    {
-        name: '4 Queijos',
-        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
-        price: 49.90,
-        inBag: 0
-    }
-]
-
-
-for (let i = 0; i < pizza.length; i++){
-    pizza[i].addEventListener('click', () => {
-        pizza_number(product[i]);
+    $('.btn-close').click(function fechar(){
+        $('.overlay').fadeOut();
     })
-}
 
-function onLoadBagNumbers(){
-    let productNumber = localStorage.getItem('pizza_number');
-    productNumber = parseInt(productNumber)
+    for (let i = 0; i < pizzas.length; i++){
+        pizzas[i].addEventListener('click', function abrir(e) {
+            var qtn = 1
+            console.log(qtn)
+            
+            e.preventDefault()
+            
+            var pizza = pizzas[i].innerHTML;
+            var ingre = ingredientes[i].innerHTML;
+            var grande = big[i].innerHTML.replace('R$','');
+            var media = medium[i].innerHTML.replace('R$','');
+            var pequena = small[i].innerHTML.replace('R$','');
+            var selected_borda = 0
+            selected_borda = selected_borda * qtn
+            grande = parseFloat(grande).toFixed(2)
+            media = parseFloat(media).toFixed(2)
+            pequena = parseFloat(pequena).toFixed(2)
+            
+            
+
+            $('.overlay').fadeIn();
+            $('.pizza-click h1').html(pizza);
+            $('.pizza-click p').html(ingre);
+            $('span.qtn').html(qtn);
+            $('.grande label').html(`Grande (R$${grande})`)
+            $('.media label').html(`Média (R$${media})`)
+            $('.pequena label').html(`Pequena (R$${pequena})`)
+
+            ;
+
+            $('div.more').click(function aumentar(){
+                
+                qtn++;
+                $('span.qtn').html(qtn)
+                subtotal = (pequena * qtn) + (selected_borda * qtn)
+                $('span.subtotal').html(`R$${subtotal}`)
+                console.log(qtn)
+            })
+            $('div.less').click(function aumentar(){
+                
+                if(qtn>0){
+                    qtn--;
+                }else{
+                    qtn=0
+                }
+                console.log(qtn)
+                $('span.qtn').html(qtn)  
+                $('span.subtotal').html(`R$${subtotal}`)
+                subtotal = (pequena * qtn) + (selected_borda * qtn)
+                $('span.subtotal').html(`R$${subtotal}`)
+            })
+            
     
-    if(productNumber){
-        sacola = document.querySelector('.sacola').textContent = `Sacola ${productNumber}`
+            var precos = $('input[name=size]')
+            var bordas = $('input[name=borda]')
+            var subtotal = 0.00
+            precos.click(function checkprices(){
+                console.log(qtn)
+                if (precos[0].checked){
+                    selected_size = grande
+                    subtotal = (pequena * qtn) + (selected_borda * qtn)
+                    parseFloat(subtotal).toFixed(2)
+                    $('span.subtotal').html(`R$${subtotal}`)
+                }
+                if (precos[1].checked){
+                    selected_size = grande
+                    subtotal = (pequena * qtn) + (selected_borda * qtn)
+                    parseFloat(subtotal).toFixed(2)
+                    $('span.subtotal').html(`R$${subtotal}`)
+                }
+                if (precos[2].checked){
+                    selected_size = grande
+                    subtotal = (pequena * qtn) + (selected_borda * qtn)
+                    parseFloat(subtotal).toFixed(2)
+                    $('span.subtotal').html(`R$${subtotal}`)
+                }
+            })
+            bordas.click(function bordaCheck(){
+                if (bordas[0].checked){
+                    selected_borda = 0
+                    subtotal = (pequena * qtn) + (selected_borda * qtn)
+                    parseFloat(subtotal).toFixed(2)
+                    $('span.subtotal').html(`R$${subtotal}`)
+                }
+                else if (bordas[1].checked || bordas[2].checked || bordas[3].checked ){
+                    selected_borda = 5
+                    subtotal = (pequena * qtn) + (selected_borda * qtn)
+                    $('span.subtotal').html(`R$${subtotal}`)
+                }
+                else if (bordas[4].checked){
+                    selected_borda = 8
+                    subtotal = (pequena * qtn) + (selected_borda * qtn)
+                    $('span.subtotal').html(`R$${subtotal}`)
+                }
+            })
+            
+        })
+
+        
     }
-}
+})
 
 
-
-function pizza_number(product){
-    
-    let productNumber = localStorage.getItem('pizza_number');
-
-    productNumber = parseInt(productNumber)
-   if (productNumber){
-        localStorage.setItem('pizza_number', productNumber + 1);
-        sacola = document.querySelector('.sacola').textContent = `Sacola ${productNumber + 1 }`
-   } else{
-        localStorage.setItem('pizza_number', 1)
-        document.querySelector('.sacola').textContent = 'Sacola 1'
-   }
-   setItems(product)
-}
-
-function setItems(product){
-   
-    let bagItems = localStorage.getItem('productInBag')
-    bagItems = JSON.parse(bagItems)
-
-    if (bagItems != null){
-
-        if(bagItems[product.tag] == undefined){
-            bagItems = {
-                ...bagItems,
-                [product.tag]: product
-            }
-        }
-        bagItems[product.tag].inBag += 1
-    } else {
-        product.inBag = 1;
-        bagItems = {
-            [product.tag]: product
-        }
-    }
-
-    localStorage.setItem('productInBag', JSON.stringify
-    (bagItems));
-}
-
-onLoadBagNumbers();

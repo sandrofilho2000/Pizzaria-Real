@@ -1,0 +1,52 @@
+{
+    "vegana":[
+        {
+            "name": "Marguerita Vegana",
+            "tag": "Queijo vegetal cremoso, tomate, majericão fresco e desidratado, azeitona e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Tofu",
+            "tag": "Queijo vegetal cremoso, tomate, cebola, tofu defumado, azeitona e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Vegana",
+            "tag": "Queijo vegetal cremoso, milho, ervilha, palmito, cebola, azeitona e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Banana Vegana",
+            "tag": "Queijo vegetal cremoso, banana, canela e açucar",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Not Dog Vegana",
+            "tag": "Queijo vegetal cremoso, salcicha de soja ao molho de tomate, pimentão,  cebola, milho, passas, batata palha, azeitona e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Goiabada",
+            "tag": "Queijo vegetal cremoso, tofu frescal e goiabada",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        }
+    ]
+}

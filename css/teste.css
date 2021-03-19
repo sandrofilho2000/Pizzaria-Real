@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Satisfy&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font: 16px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 1px;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.25)
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: rgb(255, 239, 157);
+}
+
+
+body, html{
+    height: 100%;
+    width: 100%;
+    max-width: 1360px;
+    z-index: 99;
+    font-size: 1rem;  
+    background-color: rgb(39, 38, 43);
+}
+
+.overlay{
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.pizza-click{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 620px;
+    width: 50%;
+    background-color: rgb(39, 38, 43);
+    border-radius: 5px;
+    border: 2px solid rgb(207, 188, 94);
+    color: rgb(207, 188, 94);
+    padding: 20px;
+    padding-right: 10px;
+    font-size: 22px;
+}
+
+.btn-close{
+    float: right;
+    position: relative;
+    font-size: 30px;
+    top: -10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.clear{
+    clear: both;
+}
+.pizza-click h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.quantidade{
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.quantidade-container{
+    float: right;
+}
+.quantidade span{
+    font-size: 39px;
+}
+.more{
+    margin-left: 10px;
+}
+.more, .less{
+    margin-top: -20px;
+    height: 20px;
+    align-items: center;
+    justify-items: middle;
+    -webkit-touch-callout: none;  
+    -webkit-user-select: none;    
+    -khtml-user-select: none;     
+    -moz-user-select: none;       
+    -ms-user-select: none;        
+    user-select: none;      
+}
+
+.size-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: left;
+    height: 200px;
+
+}
+
+.media, .pequena{
+    margin-top: 21px;
+
+}
+
+#cheddar, #catupiry, #chocolate, #cream-cheese{
+    margin-top: 15px;
+}
+
+.none, .grande{
+    margin-top: 10px;
+}
+
+.border{
+    width: 50%;
+    float: left;
+    height: 200px;
+}
+.container{
+    width: 100%;
+    height: 85px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.observacao{
+    text-align: left;
+    margin-top: 0px;
+
+}
+
+
+.observacao textarea{
+    resize: none;
+    height: 110px;
+    width: 91%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px;
+    border: 1px solid rgb(141, 118, 0);
+}
+
+.observacao h2{
+    font-size: 20px;
+    width: 80%;
+    text-align: left;
+}
+
+.div-subtotal{
+    margin-top: 20px;
+}
+
+
+
+
+main{
+    height: 1220px;
+    background-color: rgba(28, 27, 32, 0.39)
+}
+.main-menu{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(28, 27, 32);
+    z-index: 7;
+
+}
+main .container{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.container input[type=radio]{
+    display: none;
+    text-align: center;
+    justify-items: center;
+}
+.opc{
+    margin-top: 10px;
+    width: 25%;
+    font-size: 21px;
+    color: #FFF;
+
+}
+
+.opc label, .opc h2{
+    width: 100%;
+}
+.opc i{
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.cardapio-container{
+    height: 600px;
+    border: 5px solid rgb(207, 188, 94);
+    color: rgb(207, 188, 94);
+    width: 65%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.cardapio-container input[type=radio]{
+    display: none;
+}
+input#sabor1:checked ~ label.sabor1{
+    box-shadow: 0 0 0 2pt white;
+    transform: scale(1.07);
+}
+
+input#sabor2:checked ~ label.sabor2{
+    box-shadow: 0 0 0 2pt white;
+    transform: scale(1.07);
+}
+
+
+.menu-titulo{
+    padding-top: 20px;
+    height: 80px;
+    font-size: 28px;
+    margin: 0 auto;
+    background-color: rgb(39, 38, 43);
+    text-align: center;
+}
+
+.menu-titulo h2{
+    font-family: 'Caveat', cursive;
+}
+
+.menu-sabores{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    width: 40%;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.sabor1, .sabor2{
+    max-width: 150px;
+    width: 49%;
+    background-color: rgb(141, 118, 0);
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.sabor1:hover, .sabor2:hover{
+    transform: scale(1.07);
+}
+
+.cardapio{
+    width: 100%;
+    padding: 0 1%;
+    height: auto;
+}
+
+tr{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+input[name=flavor]{
+    display: block;
+}
+
+td:not(:first-child){
+    text-align: right;
+}
+
+th{
+    text-align: 14px;
+    text-align: right;
+}
+.cardapio tr td:first-child{
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+tr td span{
+    cursor: pointer;
+    transition: 0.3s;
+}
+tr td span:hover{
+    color: rgb(255, 213, 0);
+}
+
+.price{
+    font-size: 20px;
+    margin-left: 50px;
+    text-align: right;
+}
+
+.cardapio tr td p{
+    font-size: 14px;
+    margin-top: -5px;
+    line-height: 25px;
+}
+
+table{
+    margin-top: 40px;
+}
+
+#option1:checked ~ .opc1 i{
+    margin-top: 10px;
+    transform: rotateZ(180deg);
+}
+#option2:checked ~ .opc2 i{
+    margin-top: 10px;
+    transform: rotateZ(180deg);
+}
+#option3:checked ~ .opc3 i{
+    margin-top: 10px;
+    transform: rotateZ(180deg);
+}
+
+#option4:checked ~ .opc4 i{
+    margin-top: 10px;
+    transform: rotateZ(180deg);
+}
+
+@media screen and (max-width: 900px){
+    .pizza-click{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .pizza-click{
+        width: 90%;
+    }
+}

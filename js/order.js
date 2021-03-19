@@ -1,112 +1,3 @@
-let pizza = document.querySelectorAll('.pizza');
-
-let products = [
-    {
-        name: 'Real',
-        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
-        price: 59.90,
-        inCart: 0
-    },
-    {
-        name: 'Minas Geais',
-        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
-        price: 49.90,
-        inCart: 0
-    },
-    {
-        name: 'Marguerita',
-        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
-        price: 39.90,
-        inCart: 0
-    },
-    {
-        name: '4 Queijos',
-        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
-        price: 45.90,
-        inCart: 0
-    }
-]
-
-
-for (let i = 0; i < pizza.length; i++){
-    pizza[i].addEventListener('click', () => {
-        cartNumbers(products[i]);
-        totalCost(products[i]);
-    })
-}
-
-function onLoadCartNumbers(){
-    let productNumber = localStorage.getItem('cartNumbers');
-    productNumber = parseInt(productNumber)
-    
-    if(productNumber){
-        sacola = document.querySelector('.sacola').textContent = `Sacola ${productNumber}`
-    }
-}
-
-
-
-function cartNumbers(product){
-    let productNumber = localStorage.getItem('cartNumbers');
-
-    productNumber = parseInt(productNumber)
-   if (productNumber){
-        localStorage.setItem('cartNumbers', productNumber + 1);
-        sacola = document.querySelector('.sacola').textContent = `Sacola ${productNumber + 1 }`
-   } else{
-        localStorage.setItem('cartNumbers', 1)
-        document.querySelector('.sacola').textContent = 'Sacola 1'
-   }
-   setItems(product)
-}
-
-function setItems(product){
-    let cartItems = localStorage.getItem('productsInCart');
-    cartItems = JSON.parse(cartItems);
-
-    if (cartItems != null){
-
-        if(cartItems[product.tag] != undefined){
-            cartItems = {
-                ...cartItems,
-                [product.tag]: product
-            }
-        }
-        cartItems[product.tag].inCart += 1;
-    }else {
-        product.inCart = 1;
-        cartItems = {
-            [product.tag]: product
-        }
-    }
-  
-    localStorage.setItem('productsInCart', JSON.stringify(cartItems) )
-}
-
-
-
-function totalCost(product){
-    ///console.log('The product price is', product.price)
-    let cartCost = localStorage.getItem('totalCost');
-    cartCost = Number(cartCost)
-    console.log(typeof cartCost)
-
-    if (cartCost != null){
-        localStorage.setItem('totalCost', cartCost + product.price);
-    }else{
-        localStorage.setItem('totalCost', product.price);
-    }
-
-    
-}
-
-onLoadCartNumbers();
-
-
-
-
-
-
 /*lista = []
 
 var real = document.getElementById("real")
@@ -187,3 +78,92 @@ function order(){
     pedido = new Pedido(1, 'Sandro Filho', '21984238879', '1x Real Grande Sem Borda, 1* Coca Cola 2 litros', 'Rua Santa Luzia, 68', 'Na rua dos correios', 'Sem cebola', 'R$59.90')
     pedido.printPedido()
 }*/
+
+let pizza = document.querySelectorAll('.pizza');
+
+let product = [
+    {
+        name: 'Real',
+        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
+        price: 49.90,
+        inBag: 0
+    },
+    {
+        name: 'Minas Geais',
+        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
+        price: 49.90,
+        inBag: 0
+    },
+    {
+        name: 'Marguerita',
+        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
+        price: 49.90,
+        inBag: 0
+    },
+    {
+        name: '4 Queijos',
+        tag: 'Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano', 
+        price: 49.90,
+        inBag: 0
+    }
+]
+
+
+for (let i = 0; i < pizza.length; i++){
+    pizza[i].addEventListener('click', () => {
+        pizza_number(product[i]);
+    })
+}
+
+function onLoadBagNumbers(){
+    let productNumber = localStorage.getItem('pizza_number');
+    productNumber = parseInt(productNumber)
+    
+    if(productNumber){
+        sacola = document.querySelector('.sacola').textContent = `Sacola ${productNumber}`
+    }
+}
+
+
+
+function pizza_number(product){
+    
+    let productNumber = localStorage.getItem('pizza_number');
+
+    productNumber = parseInt(productNumber)
+   if (productNumber){
+        localStorage.setItem('pizza_number', productNumber + 1);
+        sacola = document.querySelector('.sacola').textContent = `Sacola ${productNumber + 1 }`
+   } else{
+        localStorage.setItem('pizza_number', 1)
+        document.querySelector('.sacola').textContent = 'Sacola 1'
+   }
+   setItems(product)
+}
+
+function setItems(product){
+   
+    let bagItems = localStorage.getItem('productInBag')
+    bagItems = JSON.parse(bagItems)
+
+    if (bagItems != null){
+
+        if(bagItems[product.tag] == undefined){
+            bagItems = {
+                ...bagItems,
+                [product.tag]: product
+            }
+        }
+        bagItems[product.tag].inBag += 1
+    } else {
+        product.inBag = 1;
+        bagItems = {
+            [product.tag]: product
+        }
+    }
+
+    localStorage.setItem('productInBag', JSON.stringify
+    (bagItems));
+}
+
+onLoadBagNumbers();

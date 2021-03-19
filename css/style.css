@@ -6,6 +6,7 @@
     margin: 0;
     font: 16px;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    box-sizing: border-box;
 }
 
 body, html{
@@ -14,7 +15,7 @@ body, html{
     max-width: 1360px;
     z-index: 99;
     font-size: 1rem;  
-    box-sizing: border-box;
+    background-color: rgb(39, 38, 43);
 }
 
 .container{
@@ -28,7 +29,7 @@ header{
     position: relative;
     width: 100%;
     background-color: rgb(28, 27, 32);
-    padding: 10px 25% 10px 10%;
+    padding: 10px -30px 10px 200px;
     overflow: hidden;
     scroll-behavior: smooth;
     z-index: 9;
@@ -54,12 +55,7 @@ header{
 .check{
     position: absolute;
 }
-.checklabel{
-    margin-right: -20%;
-    margin-top: 40px;
-    float: right;
-    cursor: pointer;
-}
+
 .line{
     border-radius: 5px;
     margin-top: 5px;

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    height: 100%;
+    width: 100%
+}
+
+.product-container{
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    z-index: 99999999;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid red;
+    margin: 0 auto;
+}
+
+.title{
+    width: 45%;
+}
+
+.product-price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.product-total{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.product-quantity{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}

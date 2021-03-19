@@ -1,0 +1,364 @@
+{ 
+    "tradicional":
+        [    
+        {
+            "name": "Real",
+            "tag": "Mussarela, Presunto, Provonole, Bacon, Palmito, Milho, Ervilha, Orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Hotdog",
+            "tag": "Molho, mussarela, salcicha, tomate, cebola, pimentão, bacon, milho, passas, batata palha, parmesão, azeitona e orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "5 Queijos",
+            "tag": "Molho, mussarela, gorgonzola, provonole, catupiry, azeitona e orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Portuguesa",
+            "tag": "Molho, mussarela, presunto, bacon, pimentão, cebola, ovo, azeitona preta e orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Brasileira",
+            "tag": "Molho, mussarela, presunto, bacon, catupity, palmito, milho, ervilha, azeitona e orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Bacalhau",
+            "tag": "Molho, mussarela, bacalhau, cebola, pimentão, azeitona preta e orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Diamante",
+            "tag": "Molho, mussarela, champignon, cebola, bacon, salcicha, azeitona e orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Colonial",
+            "tag": "Molho, mussarela, tomate seco, rúcula, azeitona e orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Pepperoni",
+            "tag": "Molho, mussarela, pepperoni, cebola, azeitona e orégano", 
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+
+
+
+
+
+
+
+
+
+        {
+            "name": "Mexicana",
+            "tag": "Molho, mussarela, tomate, cebola, bacon, calabresa, pimenta calabresa e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Vegetariana",
+            "tag": "Molho, mussarela, molho de espinafre, pimentão, parmesão, palmito, milho, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Natureza",
+            "tag": "Molho, mussarela, brócolis, alho frito, peito de peru, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Minas Gerais",
+            "tag": "Molho, mussarela, queijo minas padrão, bacon, calabresa, cebola, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Levíssima",
+            "tag": "Molho, mussarela, queijo minas padrão, bacon, calabresa, cebola, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Vila Rica",
+            "tag": "Molho, mussarela, frango desfiado, calabresa, cebola, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Maria Fumaça",
+            "tag": "Molho, mussarela, ricota, calabresa, azeitona preta e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "4 Queijos",
+            "tag": "Molho, mussarela, provolone, parmesão, catupity, azeitona preta e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "4 Queijos",
+            "tag": "Molho, mussarela, provolone, parmesão, catupity, azeitona preta e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Peito de Peru",
+            "tag": "Molho, mussarela, peito de peru, cebola, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Calabresa",
+            "tag": "Molho, mussarela, calabresa, cebola, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Frango com Cheddar",
+            "tag": "Molho, mussarela, frango, cheddar, bacon, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Imperador",
+            "tag": "Molho, mussarela, atum, bacon, cebola, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Canadense",
+            "tag": "Molho, mussarela, atum, bacon, cebola, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00, 
+            "inCart": 0
+        },
+        {
+            "name": "Frango com Catupiry",
+            "tag": "Molho, mussarela, frango, catupiry, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Atum",
+            "tag": "Molho, mussarela, atum, ovo, cebola, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Tropical",
+            "tag": "Molho, mussarela, abacaxi e presunto", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Palmito",
+            "tag": "Molho, mussarela, palmito, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Bacon",
+            "tag": "Molho, mussarela, bacon, azeitona e orégano", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+
+        {
+            "name": "Ecológica",
+            "tag": "Molho, mussarela, tomate, rúcula, alho frito, pimentão, ervilha, azeitona e orégano",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+        {
+            "name": "Marguerita",
+            "tag": "Molho, mussarela, tomate, manjericão, azeitona e orégano",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+        {
+            "name": "Napolitana",
+            "tag": "Molho, mussarela, tomate, parmesão, azeitona e orégano",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+        {
+            "name": "Presunto",
+            "tag": "Molho, mussarela, presunto, azeitona e orégano",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+        {
+            "name": "Alho",
+            "tag": "Molho, mussarela, alho frito, tomate, azeitona e orégano",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+        {
+            "name": "Mussarela",
+            "tag": "Molho, mussarela, tomate, azeitona e orégano",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+        {
+            "name": "Catupiry",
+            "tag": "Molho, mussarela, catupity, azeitona e orégano",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+
+
+        {
+            "name": "Aliche",
+            "tag": "Molho, mussarela, tomate, aliche, azeitona e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Majestade",
+            "tag": "Molho, mussarela, filé mignon, gorgonzola, azeitona e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Carne Seca",
+            "tag": "Molho, mussarela, carne Seca, cebola, catupiry e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Parma",
+            "tag": "Molho, mussarela, presunto de parma, queijo bolinha, geléia de pimenta agridoce, pimenta biquinho e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Filé Madeira",
+            "tag": "Molho, mussarela, filé mignon, cebola, molho madeira, azeitona e orégano",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Funghi",
+            "tag": "Molho, mussarela, funghi Secchi, parmesão, alecrim, tomate grape e azeitona",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        },
+        {
+            "name": "Canastra",
+            "tag": "Molho, mussarela, carne seca, queijo canastra, alecrim, tomate grape e azeitona",
+            "price_33": 55.00,
+            "price_28": 49.00,
+            "price_23": 44.00,
+            "inCart": 0
+        }
+
+
+        
+    ]
+}

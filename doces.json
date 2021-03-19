@@ -1,0 +1,86 @@
+{
+    "doce":
+    [
+        {
+            "name": "Romeu e Juliete",
+            "tag": "Mussarela, goiabada e queijo minas padrão", 
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Banana",
+            "tag": "Mussarela, banana, canela e açucar",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Foundi",
+            "tag": "Pêssego, abacaxi, figo e nutella",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Ouro Preto",
+            "tag": "Nutella e cereja",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Prestígio",
+            "tag": "Nutella e coco ralado",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Choquito",
+            "tag": "Nutella e castanha",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Banana com Nutella",
+            "tag": "Banana, nutella e chantilly",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Paçoca",
+            "tag": "Doce de leite Viçosa e paçoca",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+
+        {
+            "name": "Paçoca",
+            "tag": "Doce de leite Viçosa e paçoca",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        },
+        {
+            "name": "Ovomaltime",
+            "tag": "Nutella e ovomaltime",
+            "price_33": 52.00,
+            "price_28": 47.00,
+            "price_23": 41.00,
+            "inCart": 0
+        }
+    ]
+}
