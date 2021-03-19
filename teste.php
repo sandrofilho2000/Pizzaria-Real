@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Truculenta:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
+
     <main>
         <div class="overlay">
             <div class="pizza-click">
-                <div class="btn-close">x</div>
+                <div ng-app="myShoppingList" ng-controller="myCtrl">
+                    <div ng-click=removeItem() class="btn-close">x</div>
+                </div>
+                
                 <h1></h1>
                 <div style='display: flex; flex-direction: row' class="quantidade-container">
                     
