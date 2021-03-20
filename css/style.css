@@ -29,15 +29,16 @@ header{
     position: relative;
     width: 100%;
     background-color: rgb(28, 27, 32);
-    padding: 10px -30px 10px 200px;
-    overflow: hidden;
-    scroll-behavior: smooth;
+    padding: 7px 10%;
     z-index: 9;
-
+    margin-bottom: 100px;
 }
+
+
 .clear{
     clear: both;
 }
+
 .logo{
     transform: scale(1.4);
     position: relative;
@@ -64,20 +65,22 @@ header{
     background-color: white;
 }
 .header-ul{
-    margin-right: 30%;
-    height: 80px;
+    height: 85px;
+    width: 30%;
+    max-width: 400px;
     float: right;
+    position: relative;
     display: flex;
     flex-direction: row;
     font-size: 25px;
     top: 0;
     right: 0;
+    justify-content: space-around;
 }
 
 .header-ul li{
+    line-height: 85px;
     text-decoration: none;
-    margin-top: 25px;
-    height: 40%;
     cursor: pointer;
 }
 .header-ul li a{
@@ -87,13 +90,13 @@ header{
     color: white;
 }
 .header-ul li:not(:first-child){
-    margin-left: 40%;
+    margin-left: 100px;
 }
 
 .header-ul li :hover{
     color: #cfbc5e
 }
-
+/*
 .sacola{
     position: fixed;
     height: 55px;
@@ -398,3 +401,4 @@ footer{
         font-size: 0.8rem
     }
 }
+*/
