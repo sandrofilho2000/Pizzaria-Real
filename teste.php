@@ -22,11 +22,18 @@
                 <li><a href="teste.php">Contato</a></li>
             </ul></div>
         </div>
-        <div class="clear"></div>
+        
     </header>
 
-    
+    <section class="main-section">
+        <h2>FAÇA SEU PEDIDO ONLINE!</h2>
+        <div class="gallery">
+            <div class="gallery-single">
 
+            </div><!--gallery-single-->
+        </div><!--gallery-->
+    </section><!--main-section-->
+    <div class="clear"></div>
     <main>
         <div class="overlay">
 

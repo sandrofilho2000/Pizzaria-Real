@@ -63,7 +63,14 @@
         <div class="p"><i class="fa fa-shopping-bag" aria-hidden="true"></i>Sacola</div>
     </div>
     
-    
+    <section class="video">
+        <div class="overlay2">
+            <h2>Faça seu pedido online!</h2>
+        </div>
+        <video autoplay loop>
+            <source src="images/slide.mp4" type="video/mp4"> 
+        </video>
+    </section>
     
     <main>
         <div class="overlay">
