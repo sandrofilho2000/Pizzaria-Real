@@ -224,13 +224,23 @@
                     }
                 ?>
                 
-            </div>
+                </table><!--cardapio-->
             
         </div>
 
     </main>
-    <a href="index.html"></a>
+    
+                    
     <script src = 'jquery.js'></script>
     <script src = 'js/teste.js'></script>
+
+    <footer id="footer">
+        
+        <div class="img-footer"></div>
+        <div class="adress">Pizzaria Real | R. Sábino José Ferreira, 719.99, Barbacena - MG, | Telefone: 3333-179.991</div>
+        <div class="map-footer"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.79.993313411124!2d-43.771326685440705!3d-21.240043085860023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa220224d5775af%3A0x1b7a604455f8de05!2sPizzaria%20Real!5e0!3m2!1spt-BR!2sbr!4v16139.999.995679.99806!5m2!1spt-BR!2sbr" width="350" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        
+    </footer>
+    <div class="footer-bottom">Desenvolvido por @sandro____f</div>
 </body>
 </html>
