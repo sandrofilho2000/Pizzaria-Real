@@ -15,16 +15,20 @@
 
     <main>
         <div class="overlay">
+
             <div class="pizza-click">
+
                 <div ng-app="myShoppingList" ng-controller="myCtrl">
                     <div ng-click=removeItem() class="btn-close">x</div>
                 </div>
                 
-                <h1></h1>
+                <h1></h1><!--myShoppingList-->
+                
                 <div style='display: flex; flex-direction: row' class="quantidade-container">
                     
                     <div class="quantidade">
                         Quantidade: 
+
                         <div class="more">
                             <span unselectable = 'on'>+</span>
                         </div>
@@ -33,29 +37,33 @@
 
                         <div class="less">
                             <span unselectable = 'on'>-</span>
-                        </div>
-                    </div>    
-                </div>
-                
-                <p></p>
+                        </div><!--less-->
+
+                    </div><!--quantidade--> 
+
+                </div><!--quantidade-container-->
+
                 <div class="overlay-middle">
                        
                     <div class="size-container">
+
                     <h2>SELECIONE O TAMANHO</h2> 
+
                         <div class="grande">
                             <input type="radio" name="size" class="grande" id="grande" checked>  
                             <label class='grande' for="grande">Grande: </label>
-                        </div>
+                        </div><!--grande-->
 
                         <div class="media">
                             <input type="radio" name="size" id="media">  
                             <label class='media' for="media">Média: </label>
-                        </div>
+                        </div><!--media-->
                         
                         <div class="pequena">
                             <input type="radio" name="size" id="pequena">  
                             <label class='pequena' for="pequena">Pequena: </label>
-                        </div>
+                        </div><!--media-->
+                        
                     </div><!--size-container-->
 
                     <div class="border">
@@ -64,48 +72,52 @@
                         <div class="none">
                             <input type="radio" name="borda" id="none" checked>  
                             <label for="cream-cheese">Nenhuma</label>
-                        </div>
+                        </div><!--none-->
 
                         <div class="cheddar">
                             <input type="radio" name="borda" id="cheddar">  
                             <label for="cheddar">Cheddar (R$5.00)</label>
-                        </div>
+                        </div><!--cheddar-->
 
-                        <div class="Catupiry">
+                        <div class="catupiry">
                             <input type="radio" name="borda" id="catupiry">  
                             <label for="catupiry">Catupiry (R$5.00)</label>
-                        </div>
+                        </div><!--catupiry-->
                         
                         <div class="chocolate">
                             <input type="radio" name="borda" id="chocolate">  
                             <label for="chocolate">Chocolate (R$5.00)</label>
-                        </div> 
+                        </div><!--chocolate-->
 
                         <div class="cream-cheese">
                             <input type="radio" name="borda" id="cream-cheese">  
                             <label for="cream-cheese">Cream Cheese Philadelphia (R$8.00)</label>
-                        </div>
+                        </div><!--cream-cheese-->
 
-                    </div>
+                    </div><!--border-->
                     
                 </div><!--overlay-middle-->
+
                 <div class="clear"></div>
+
                 <div class="observacao">
                     <h2>Observação</h2>
                     <textarea placeholder="Sem cebola, maionese extra..." class="obs" cols="30" rows="10"></textarea>
-                </div>
+                </div><!--observacao-->
                 
                 <div class="div-subtotal">
                     <strong>
                         <span>Subtotal: </span>
                     </strong>
                         <span class="subtotal"></span>
-                </div><!--total-->
+                </div><!--subtotal-->
+
             </div>
-        </div>
+        </div><!--overlay-->
 
         <div id='main-menu' class="main-menu">
             <div class="container">
+
                 <div class="opc">
                     <input type="radio" name="opc" id="option1" checked>
                     <label for ='option1' class="opc1" " ><h2 ">TRADICIONAIS</h2>  <br><i id='opc1 'class="fa fa-chevron-circle-down" style="font-size:48px;color:#FFF""></i></label>
@@ -154,6 +166,10 @@
                         </div>Pequena
                     </div>-->
                 </div>
+
+
+                <!-----PHP----->
+
                 <?php
                     echo "<pre>";
                     echo "
