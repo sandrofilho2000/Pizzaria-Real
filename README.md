@@ -1,7 +1,7 @@
 # 🍕Pizzaria-Real🍕
 ### What is Pizzaria Real 🤔? 
 
-Pizzaria real is a pizzeria from Barbacena, Brazil the is known for its quality and excellent flavors, I am creating this website for study purposes. I will use technologies such as 
+Pizzaria real is a pizzeria from Barbacena (Brazil) that is known for its quality and excellent flavors, I am creating this website for study purposes. I will use technologies such as 
 
 * ➡Jquery
 * ➡AngularJS
